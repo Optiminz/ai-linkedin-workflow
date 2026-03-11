@@ -24,13 +24,14 @@ A post can score high on voice and low on conversion. That's useful to know befo
 
 The `frameworks/` folder holds reusable post structures — patterns that work across different topics. The system comes with some. You can add your own.
 
-When you see a post structure you want to repeat:
+When you notice a post structure you want to repeat, tell Claude Code:
 
-1. Write out the skeleton: what's the opening move, how does it develop, how does it close?
-2. Note what makes it work — what tension it creates, what it assumes the reader already believes
-3. Save it to `frameworks/your-framework-name.md`
+- "That structure worked really well — save it as a framework"
+- "I like how that post opened with the counterintuitive claim, then showed the mechanism, then gave one concrete example. Save that pattern."
 
-Keep it abstract enough to reuse. "Lead with the counterintuitive claim, then show the mechanism, then give one concrete example" is a framework. A specific post about pricing is not.
+Claude Code creates the framework file with the skeleton, what makes it work, and when to use it. You can also point it at someone else's post and say "extract that structure as a framework."
+
+Keep frameworks abstract enough to reuse. "Lead with the counterintuitive claim, then show the mechanism, then give one concrete example" is a framework. A specific post about pricing is not.
 
 ---
 
@@ -48,7 +49,7 @@ This catches more than voice scoring algorithms. Your ear knows before your edit
 
 This system is scoped to LinkedIn. For longer-form content — newsletters, blog posts, whitepapers — there's a separate production system built on the same principles but designed for the longer arc: research, structure, multiple drafts, quality gates.
 
-It's called [ai-writing-workflow](https://github.com/Optiminz/ai-writing-workflow). Seven specialized personas, a critic that scores 0–100 before anything publishes, and a system learning layer that updates the constitution when something fails.
+It's called [ai-writing-workflow](https://github.com/Optiminz/ai-writing-workflow). Seven specialized personas, a critic that scores 0-100 before anything publishes, and a system learning layer that updates the constitution when something fails.
 
 Worth looking at if you're writing long-form regularly and want the same level of voice consistency across both formats.
 

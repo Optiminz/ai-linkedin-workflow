@@ -1,6 +1,7 @@
 # Guide 05: Voice Samples
 
-**Why you're here:** Your posts sound polished but not quite like you. Rules tell the AI what to avoid — samples show it what to aim for.
+**What this covers:** Why voice samples matter and how to provide better ones
+**What Claude Code does:** Analyzes your samples, extracts patterns, and saves structured voice profiles automatically
 
 ---
 
@@ -12,9 +13,17 @@ But rules describe the absence of bad, not the presence of good. Sentence rhythm
 
 ---
 
+## How it works
+
+During your first session, Claude Code asks you to paste writing samples and creates a voice profile from them. That profile lives in `voice-samples/` and gets loaded every time you write a post.
+
+To add more samples later, just paste them into a Claude Code session and say "add this as a voice sample." It handles the analysis and file creation.
+
+---
+
 ## How to pick good samples
 
-Go through posts you've written — on LinkedIn, in emails, in documents. Look for ones where you re-read them and think: yes, that's actually how I think.
+Go through things you've written — LinkedIn posts, emails, documents, Slack messages. Look for ones where you re-read them and think: yes, that's actually how I think.
 
 Good signs:
 - You used a phrase you wouldn't see anywhere else
@@ -28,17 +37,17 @@ Bad signs:
 
 ---
 
-## How many samples to include
+## How many samples
 
-3–5 is a working minimum. More is better — up to around 10–12 before diminishing returns set in.
+3-5 is a working minimum. More is better — up to around 10-12 before diminishing returns set in.
 
 Varied topics are fine. Voice consistency matters more than topical consistency. A sample about your morning routine and a sample about pricing strategy can both be useful if they both sound like you.
 
 ---
 
-## How the system uses them
+## What the system looks for in your samples
 
-When you run `/lidev`, the system reads your voice samples before generating anything. It looks at:
+When you run `/lidev`, Claude Code reads your voice samples and looks at:
 
 - How you open — do you lead with an observation, a question, a statement of fact?
 - Sentence length variation — long, then short. Or always compressed. Or flowing.
@@ -49,39 +58,15 @@ The samples don't get copied. They get read for pattern.
 
 ---
 
-## Where to save them
+## Improving your profile over time
 
-Create files in the `voice-samples/` directory:
+After a few posts, if something still feels off, you can:
 
-```
-voice-samples/
-  yourname-topic.md
-  yourname-another-topic.md
-```
+- Paste more samples: "Here's an email I wrote that really sounds like me"
+- Flag specific patterns: "I notice I always use short sentences after making a big claim — protect that"
+- Remove samples that aren't representative anymore
 
-Keep file names simple and descriptive. The content of each file should just be the post text itself — no markup, no headers, no metadata.
-
----
-
-## What each sample file looks like
-
-Just the text. Nothing else required.
-
-```
-Three years ago I thought onboarding was a checklist problem.
-
-It's not. It's a trust problem. The checklist is just where trust either forms or doesn't.
-
-We started treating the first two weeks less like task completion and more like relationship building. Fewer forms. More conversations about what success actually looks like for this person.
-
-Retention went up. But more usefully, we stopped losing people we didn't know were about to leave.
-
----
-
-[Note: this one works because of the pivot in line two — "it's not X, it's Y" is a structure worth repeating]
-```
-
-The note at the bottom is optional. Include it if there's something specific about the sample worth flagging to the AI — a structure you like, a phrase pattern you want more of.
+Tell Claude Code what you want changed. It updates the voice profile files.
 
 ---
 

@@ -5,24 +5,27 @@
 
 ---
 
-## Two paths to your first post
+## How it works
 
-### Path A: Claude Code
+You open Claude Code in this folder and tell it what you want to write about. It handles everything else.
 
-1. Clone the repo and open the directory in your terminal
-2. Run `claude` to start a Claude Code session
-3. Say: "I want to write a LinkedIn post about [your topic]"
-4. The system will ask for a writing sample — paste a few sentences you've written anywhere (email, doc, previous post, doesn't matter)
-5. It'll generate three hook options, walk you through refinement, and produce a ready-to-publish post
+### With Claude Code
 
-### Path B: Any AI tool
+1. Open your terminal in this folder and type `claude`
+2. It detects this is your first run and asks you to paste 2-3 writing samples
+3. It analyzes your voice, saves a profile, and sets up your voice rules — all automatically
+4. Tell it your topic: "I want to write a LinkedIn post about [your topic]"
+5. It generates three hook options, walks you through refinement, and produces a ready-to-publish post
 
-1. Clone the repo
-2. Open `prompts/lidev-standalone.md`
-3. Paste your writing samples where indicated (there's a marked placeholder)
-4. Add your topic where indicated
-5. Copy the entire prompt into ChatGPT, Claude, Gemini, or wherever you work
-6. Follow the guided flow — the prompt handles the structure
+You don't create any files, edit any templates, or configure anything. You talk, it builds.
+
+### With any other AI tool
+
+1. Open `prompts/lidev-standalone.md`
+2. Paste your writing samples where indicated (there's a marked placeholder)
+3. Add your topic where indicated
+4. Copy the entire prompt into ChatGPT, Claude, Gemini, or wherever you work
+5. Follow the guided flow — the prompt handles the structure
 
 ---
 

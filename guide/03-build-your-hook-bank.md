@@ -1,7 +1,7 @@
 # Guide 03: Build Your Hook Bank
 
-**Time:** ~20 minutes to seed it; ongoing after that
-**What you'll have at the end:** A hook bank that gets better with every post session
+**What this covers:** How the hook bank works and why your hooks keep getting better
+**What Claude Code does:** Suggests hooks from the bank during post sessions, and saves unused options back to the bank automatically
 
 ---
 
@@ -23,31 +23,7 @@ A weak hook describes what the post is about. A strong hook makes someone want t
 
 `hook-bank.md` stores hooks organized by type: story openings, contrarian takes, framework teasers, lessons-learned openers, and others.
 
-When you run a post session, the system suggests three hooks from the bank that fit your topic — then adapts them to your content. You don't write from scratch every time. You pick a structure that works and make it specific.
-
-After each session, any hook options you didn't choose get offered back to the bank. Over time, the bank builds up a set of proven structures tuned to your writing style.
-
----
-
-## How to seed your bank
-
-**Method 1: Extract from posts you admire**
-
-Find 5-10 LinkedIn posts that made you stop scrolling. Copy just the first line of each. Look at what they have in common — tension, specificity, a question implied but not asked. Add the strongest structures to your bank, paraphrased so they're not copied verbatim.
-
-**Method 2: Extract from your own past posts**
-
-If you've posted before, pull your top 5 by engagement. What did those first lines have in common? Add those patterns.
-
-**Method 3: Extract from your own thinking**
-
-Think about the last time you explained something to a colleague and they leaned in — what was the first sentence? The moment something clicked for someone, what set it up? Those are hooks waiting to be written.
-
----
-
-## How /lidev uses the bank
-
-When you start a post session with `/lidev`, the system:
+When you run `/lidev`, Claude Code:
 
 1. Reads your hook bank
 2. Identifies hook types that fit your topic
@@ -56,15 +32,37 @@ When you start a post session with `/lidev`, the system:
 
 You pick one (or describe what you want from a combination), and the post develops from there.
 
-After the session, any of the three options you didn't pick get flagged for the bank if they're strong enough to reuse in a different context.
+After the session, any of the three options you didn't pick get offered back to the bank if they're strong enough to reuse in a different context. Claude Code handles this — it asks if you want to save them and updates the file.
 
 ---
 
-## Maintaining the bank over time
+## How it gets seeded
 
-Every few months, review the bank and prune:
+The bank comes pre-loaded with example hook structures to get you started. As you write more posts, it fills up with hooks tailored to your voice and topics.
 
-- Delete hooks you've used exactly once and they didn't perform
+You can also accelerate this by telling Claude Code:
+
+- "Here are 5 LinkedIn posts I thought had great opening lines" — it'll extract the patterns and add them to your bank
+- "I've posted before, here are my top 5 by engagement" — it'll pull the hook patterns from those
+- "Add a hook structure for [specific pattern you like]"
+
+You describe what you want. Claude Code creates the entries.
+
+---
+
+## Why it gets better over time
+
+Every post session generates three hook options. You use one. The other two — if they're good — go into the bank. After 10-15 posts, you have a bank of 20-30 proven structures tuned to your voice, your topics, and your audience.
+
+The system also learns which hook types perform best once you start tracking posts in `post-log.md`. It'll start favoring structures that generate engagement for your specific audience.
+
+---
+
+## Maintaining the bank
+
+Every few months, it's worth reviewing the bank. You can ask Claude Code to:
+
+- Remove hooks you've used once that didn't perform
 - Keep any structure you've returned to more than twice
 - Add variations when a hook works but felt slightly off
 

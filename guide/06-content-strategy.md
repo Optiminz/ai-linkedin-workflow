@@ -1,6 +1,7 @@
 # Guide 06: Content Strategy
 
-**Why this matters:** One great post doesn't build an audience. Consistent, recognizable content does.
+**What this covers:** Why strategy matters and how the /strategy skill works
+**What Claude Code does:** Runs a guided conversation to build your content strategy, then saves it to the repo
 
 ---
 
@@ -14,7 +15,7 @@ Consistency compounds. People need to see a name multiple times before they foll
 
 ## What content pillars are
 
-Pillars are the 2–3 topics you're known for. Not everything you could write about — what people will come to you for.
+Pillars are the 2-3 topics you're known for. Not everything you could write about — what people will come to you for.
 
 The narrower you go, the faster recognition builds. "I write about leadership" competes with everyone. "I write about why finance leaders can't get buy-in for system changes" is a position.
 
@@ -32,9 +33,9 @@ Three or fewer. More than three and nothing becomes a signal.
 
 ## The /strategy skill
 
-When you're ready to work through pillars in a structured way, run `/strategy` in a Claude Code session. It'll walk you through a guided conversation — your background, your audience, what you're trying to build — and help you draft a content strategy document saved to `projects/linkedin/`.
+When you're ready, type `/strategy` in a Claude Code session. It runs a guided conversation covering your background, audience, goals, and positioning — then produces a content strategy document saved to the repo.
 
-You don't need it to start. But it's there when you want more structure than this guide provides.
+You don't need it to start posting. But after 10+ posts, when you want to be more intentional about what you're building, it gives you a framework to work inside.
 
 ---
 
@@ -75,7 +76,7 @@ A starting point, not a rule:
 | Practitioner | 20% |
 | Feel Good | 10% |
 
-If your goal is primarily lead generation, weight toward Conversion. If you're building a reputation in a new field, weight toward Thought Leadership. Adjust based on what's actually working — the post-log in `projects/linkedin/post-log.md` is for tracking this.
+If your goal is primarily lead generation, weight toward Conversion. If you're building a reputation in a new field, weight toward Thought Leadership. Adjust based on what's actually working — the post log is there for tracking this.
 
 ---
 

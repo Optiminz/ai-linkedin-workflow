@@ -1,7 +1,7 @@
 # Guide 04: Track Your Posts
 
-**Time:** 2 minutes per post to log; patterns emerge after 10+ posts
-**What you'll have at the end:** A system that tells you what's actually working
+**What this covers:** How post tracking and the idea bank work, and what they reveal over time
+**What Claude Code does:** Logs posts after each session, updates metrics when you share them, and surfaces ideas when you start a new post
 
 ---
 
@@ -23,15 +23,13 @@ The data won't tell you everything, but it'll tell you enough to stop repeating 
 
 `post-log.md` is a simple table. Each row is one post.
 
-**When to update it:**
-- At publish time: add the date, topic, hook type, and LinkedIn URL
-- 48-72 hours later: add impressions, comments, and any notable reactions
+After each `/lidev` session, Claude Code offers to add an entry with the date, topic, hook type, and framework used. When you publish the post, paste the LinkedIn URL back and it updates the entry.
 
-You can pull impressions and comments directly from LinkedIn's analytics on each post. No third-party tools required.
+A couple of days later, when you have metrics, tell Claude Code something like "my last post got 2,400 impressions and 18 comments" and it'll update the log. No form to fill out — just tell it the numbers.
 
-**What to log:**
+**What gets tracked:**
 
-| Field | What to capture |
+| Field | What it captures |
 |-------|----------------|
 | Date | Published date |
 | Topic | One-line description |
@@ -41,23 +39,19 @@ You can pull impressions and comments directly from LinkedIn's analytics on each
 | Comments | Count, and note if high-quality |
 | Notes | Anything worth remembering — unusual reach, unexpected audience, DMs generated |
 
-Keep the notes field brief. One sentence is enough — you're not writing a post-mortem, you're creating a searchable record.
-
 ---
 
 ## How idea-bank.md works
 
-Ideas don't arrive on schedule. `idea-bank.md` is where you put them when they do.
+Ideas don't arrive on schedule. `idea-bank.md` is where they go when they do.
 
-**When to add an idea:**
-- Something frustrating or surprising happened at work
-- You explained something to someone and they got it immediately
-- You read something that made you disagree
-- A conversation made you think differently about something you thought you knew
+Anytime you have a post idea — in a conversation, reading something, after a meeting — just tell Claude Code: "Add this to my idea bank: [your idea]." It saves it.
 
-**What to capture:**
+When you start a new post session, Claude Code checks the idea bank and surfaces relevant topics before you decide what to write about.
 
-A rough entry is fine — a sentence or two is enough to jog your memory later:
+**What makes a good idea entry:**
+
+A rough note is fine — a sentence or two is enough to jog your memory later:
 
 ```
 Had a call today where the client thought they had a process problem.
@@ -65,22 +59,18 @@ Turned out it was a people problem wearing a process costume.
 Interesting reframe — worth a post.
 ```
 
-**When to pick from it:**
-
-At the start of a post session, open idea-bank.md before deciding on a topic. You'll often find something better than what you were planning to write about.
-
 ---
 
 ## What the data tells you over time
 
-After 15-20 posts, look at your log and ask:
+After 15-20 posts, ask Claude Code to review your post log. It can identify:
 
 - **Framework posts vs. story posts:** Which generates more comments? Comments indicate resonance — people respond when something lands.
 - **Topic clusters:** Are certain topics generating 2x the impressions? You may have an audience primed for that area.
 - **Hook types:** Is one hook type consistently outperforming others for your audience? That's your default starting point.
-- **Post length:** Do longer posts trail off or hold attention? Your audience will tell you through completion rates (visible in LinkedIn analytics).
+- **Post length:** Do longer posts trail off or hold attention?
 
-Don't optimize too early. Wait until you have at least 10 comparable posts before drawing conclusions. One outlier — a post that went wide for a random reason — will skew everything if you react to it.
+Don't optimize too early. Wait until you have at least 10 comparable posts before drawing conclusions. One outlier will skew everything if you react to it.
 
 ---
 
